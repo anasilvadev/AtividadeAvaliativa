@@ -18,9 +18,8 @@
 
     <input type="button" value="Adicionar Nota" id="btninserir" onclick="inserir()"><br>
     <div>
-        <input type="button" value="Definir como Urgente" id="btnurgente" onclick="urgente()"><br>
-        <input type="button" value="Definir como não Urgente" id="btnnurgente" onclick="nurgente()"><br>
-        <div>
+        <label><input type="radio" name="tipo" value="urgente" onclick="urgente()"> Urgente</label>
+        <label><input type="radio" name="tipo" value="nurgente" onclick="nurgente()"> Não Urgente</label>
 
         </div>
 </body>

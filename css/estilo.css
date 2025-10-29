@@ -1,0 +1,25 @@
+.nUrgentes {
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(230, 255, 6);
+    width: 700px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    float: right;
+    border-style: inset;
+    height: 300px;
+}
+
+.urgentes {
+    border-width: 5px;
+    border-style: solid;
+    border-color: red;
+    width: 700px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    float: left;
+    border-style: inset;
+    height: 300px;
+}
