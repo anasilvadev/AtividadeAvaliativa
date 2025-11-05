@@ -10,18 +10,37 @@
 </head>
 
 <body>
-    <h1>Inserir Notas</h1>
-    <p>Está página é para inserir suas notas, caso deseja consulta-lás, Clique: <a href="index.html"> Voltar</a></p>
 
-    <label for="inserir"> Insira sua nota </label>
-    <input type="text" id="inserirtexto"> <br>
+    <div id="container">
+        <div id="inserir">
+            <h1>Inserir Notas</h1>
+            <label for="inserir"> Insira sua nota </label>
+            <input type="text" id="inserirtexto"> <br>
+            <div>
+                <label><input type="checkbox" id="urgenteCheck" value="urgente"> Urgente</label>
+                <label><input type="checkbox" id="nurgenteCheck" value="nUrgente"> Não urgente</label>
+            </div>
+            <input type="button" value="Adicionar Nota" id="btninserir" onclick="inserir()"><br>
 
-    <input type="button" value="Adicionar Nota" id="btninserir" onclick="inserir()"><br>
-    <div>
-        <label><input type="radio" name="tipo" value="urgente" onclick="urgente()"> Urgente</label>
-        <label><input type="radio" name="tipo" value="nurgente" onclick="nurgente()"> Não Urgente</label>
 
+
+            <h1>Consultar notas</h1>
+            <div id="divurgentes">
+                <div id="urgentes"> </div>
+                <h2>Urgentes</h2>
+                <input type="button" value="Excluir Nota" onclick="excluirnotaU()"><br>
+                <input type="button" value="Excluir Tudo" onclick="excluirtudoU()"><br>
+            </div>
+            <div id="divnUrgentes">
+                <div id="nUrgentes"></div>
+                <h2>Não Urgentes</h2>
+                <input type="button" value="Excluir Nota" id="btnexcluirn" onclick="excluirnotaNU()"><br>
+                <input type="button" value="Excluir Tudo" id="btnexcluirt" onclick="excluirtudoNU()"><br>
+            </div>
         </div>
+
+    </div>
+
 </body>
 
 </html>
